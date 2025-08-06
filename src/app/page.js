@@ -4,37 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 export default function Home() {
-  const [theme, setTheme] = useState('light');
   const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      // Sync with <html> class on mount
-      const isDark = document.documentElement.classList.contains('dark');
-      setTheme(isDark ? 'dark' : 'light');
-      setMounted(true);
-
-      // Listen for theme changes in other tabs
-      const onStorage = () => {
-        const isDark = document.documentElement.classList.contains('dark');
-        setTheme(isDark ? 'dark' : 'light');
-      };
-      window.addEventListener('storage', onStorage);
-      return () => window.removeEventListener('storage', onStorage);
-    }
-  }, []);
-
-  const toggleTheme = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light';
-    localStorage.setItem('theme', newTheme);
-    if (newTheme === 'dark') {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-    setTheme(newTheme);
-  };
-
   if (!mounted) return null; // Prevent hydration mismatch
 
   return (

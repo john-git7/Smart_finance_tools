@@ -12,18 +12,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  metadataBase: new URL('https://smartfinancetools.com'), // change to your domain
+  metadataBase: new URL('https://smart-finance-tools.vercel.app/'), // change to your domain
   title: {
     default: 'Smart Finance Tools',
     template: '%s | Smart Finance Tools',
   },
   description: 'Free and easy calculators for mortgages, investments, savings goals, and retirement planning.',
   keywords: ['finance tools', 'mortgage calculator', 'investment calculator', 'savings planner', 'retirement calculator'],
-  authors: [{ name: 'Your Name', url: 'https://your-site.com' }],
+  authors: [{ name: 'Blazer', url: 'https://smart-finance-tools.vercel.app/' }],
   openGraph: {
     title: 'Smart Finance Tools',
     description: 'Calculate your mortgage, investments, and savings easily.',
-    url: 'https://smartfinancetools.com',
+    url: 'https://smart-finance-tools.vercel.app/',
     siteName: 'SmartFinanceTools',
     images: [
       {
@@ -69,7 +69,7 @@ export default function RootLayout({ children }) {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "Smart Finance Tools",
-    "url": "https://smartfinancetools.com",
+    "url": "https://smart-finance-tools.vercel.app/",
     "applicationCategory": "FinanceApplication",
     "offers": {
       "@type": "Offer",
