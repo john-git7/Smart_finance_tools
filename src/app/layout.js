@@ -63,6 +63,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+         <link rel="icon" href="/favicon.ico" />
         <script dangerouslySetInnerHTML={{ __html: setInitialTheme }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{
   __html: JSON.stringify({

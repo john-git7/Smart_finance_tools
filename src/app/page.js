@@ -4,8 +4,6 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 export default function Home() {
-  const [mounted, setMounted] = useState(false);
-  if (!mounted) return null; // Prevent hydration mismatch
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-sky-50 to-white dark:from-gray-900 dark:to-black py-16 px-6 sm:px-8 transition-colors duration-300">
@@ -54,10 +52,25 @@ export default function Home() {
 function ToolCard({ title, href, description }) {
   return (
     <Link href={href}>
-      <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 hover:shadow-xl transition p-6 rounded-2xl cursor-pointer h-full">
-        <h2 className="text-xl font-semibold text-black dark:text-white mb-2">{title}</h2>
-        <p className="text-gray-700 dark:text-gray-300 text-sm">{description}</p>
+      <div className="group relative bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 transition-all duration-300 p-6 rounded-2xl cursor-pointer h-full shadow-sm hover:shadow-lg transform hover:-translate-y-1 hover:scale-[1.02] hover:border-purple-500 dark:hover:border-purple-400">
+
+        {/* Subtle purple glow effect on hover */}
+        <div className="absolute inset-0 rounded-2xl pointer-events-none opacity-0 group-hover:opacity-100 transition duration-300 blur-md bg-purple-400/10 dark:bg-purple-500/10"></div>
+
+        {/* Content */}
+        <div className="relative z-10">
+          <h2 className="text-xl font-semibold text-black dark:text-white mb-2 group-hover:text-purple-700 dark:group-hover:text-purple-400 transition-colors">
+            {title}
+          </h2>
+          <p className="text-gray-700 dark:text-gray-300 text-sm">
+            {description}
+          </p>
+        </div>
+
       </div>
     </Link>
   );
 }
+
+
+
