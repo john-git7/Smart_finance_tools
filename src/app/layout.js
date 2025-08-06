@@ -12,22 +12,22 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  metadataBase: new URL('https://smart-finance-tools.vercel.app/'), // change to your domain
+  metadataBase: new URL('https://smart-finance-tools.vercel.app'), // change to your domain
   title: {
     default: 'Smart Finance Tools',
     template: '%s | Smart Finance Tools',
   },
   description: 'Free and easy calculators for mortgages, investments, savings goals, and retirement planning.',
   keywords: ['finance tools', 'mortgage calculator', 'investment calculator', 'savings planner', 'retirement calculator'],
-  authors: [{ name: 'Blazer', url: 'https://smart-finance-tools.vercel.app/' }],
+  authors: [{ name: 'Blazer', url: 'https://smart-finance-tools.vercel.app' }],
   openGraph: {
     title: 'Smart Finance Tools',
     description: 'Calculate your mortgage, investments, and savings easily.',
-    url: 'https://smart-finance-tools.vercel.app/',
+    url: 'https://smart-finance-tools.vercel.app',
     siteName: 'SmartFinanceTools',
     images: [
       {
-        url: '/opengraph-image.png',
+        url: '/og-image.png',
         width: 1200,
         height: 630,
       },
@@ -41,7 +41,7 @@ export const metadata = {
     description: 'Handy financial calculators in your browser.',
     site: '@yourtwitter',
     creator: '@yourtwitter',
-    images: ['/opengraph-image.png'],
+    images: ['/og-image.png'],
   },
 };
 
@@ -64,6 +64,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
          <link rel="icon" href="/favicon.ico" />
+         <meta name="google-site-verification" content=" googleb15d11df18a77ad4.html" />
         <script dangerouslySetInnerHTML={{ __html: setInitialTheme }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{
   __html: JSON.stringify({

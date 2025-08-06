@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://smart-finance-tools.vercel.app/
+Host: https://smart-finance-tools.vercel.app
 
 # Sitemaps
 Sitemap: https://smart-finance-tools.vercel.app/sitemap.xml
