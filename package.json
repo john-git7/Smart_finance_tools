@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "postbuild": "next-sitemap",
-     "sitemap": "next-sitemap"
+    "sitemap": "next-sitemap"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.11",
