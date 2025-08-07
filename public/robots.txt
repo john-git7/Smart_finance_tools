@@ -1,6 +1,4 @@
-# *
-User-agent: *
+﻿User-agent: *
 Allow: /
 
-# Sitemaps
-Sitemap: https://smartfinancetools.vercel.app/sitemap.xml
+Sitemap: https://smart-finance-tools.vercel.app/sitemap.xml
