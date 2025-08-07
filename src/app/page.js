@@ -42,7 +42,7 @@ export default function Home() {
         </div>
 
         <footer className="text-center text-gray-400 dark:text-gray-500 mt-16 text-sm">
-          © {new Date().getFullYear()} SmartFinanceTools.com
+          © {new Date().getFullYear()} SmartFinanceTools
         </footer>
       </div>
     </main>
