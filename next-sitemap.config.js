@@ -2,4 +2,5 @@
 module.exports = {
   siteUrl: 'https://smartfinancetools.vercel.app', // or your custom domain
   generateRobotsTxt: false,
+  sitemapSize: 5000,
 };
