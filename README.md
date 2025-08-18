@@ -1,82 +1,47 @@
-# 💼 SmartFinanceTools – Passive Income Calculator Website
+# 💼 SmartFinanceTools
 
-## 📘 Project Description
-SmartFinanceTools is a niche web application offering **free, SEO-optimized financial calculators** targeted primarily at users in the **US/UK**. The platform provides simple, fast, and mobile-friendly tools that help people make better financial decisions while generating **passive income** through ads and affiliate links.
+Free, mobile-friendly financial calculators to help users plan mortgages, investments, savings goals, and retirement — built for speed and SEO to generate passive income via ads and affiliate links.
 
-The project is built as a **static client-side application** (no backend, no login required), ensuring speed, accessibility, and ease of deployment.
-
----
-
-## 🎯 Objectives
-- Build a **fast, mobile-friendly, SEO-optimized** website  
-- Provide valuable **financial calculators** for budgeting, loans, and investments  
-- Drive **organic traffic** via search engines  
-- Monetize through **Google AdSense** and **affiliate links**  
+**Live Demo:** [https://smartfinancetools.vercel.app](https://smartfinancetools.vercel.app)
 
 ---
 
-## 🛠️ Key Features
-Each calculator comes with a clean UI, input validation, and visual outputs (charts/tables), plus SEO-friendly pages.
+## ✨ Features
 
-- 🏠 **Mortgage Calculator**  
-- 📈 **Compound Interest / Investment Calculator**  
-- 💳 **Credit Card Payoff Estimator**  
-- 📊 **Monthly Budget Planner**  
-- 🚗 **Car Loan EMI Tool**  
+- 🏠 **Mortgage Calculator** – estimate monthly mortgage payments  
+- 📈 **Investment Calculator** – forecast future value based on initial amount, return rate, and term  
+- 🎯 **Savings Goal Calculator** – figure out how much to save each month to hit a target  
+- 👵 **Retirement Calculator** – plan how much you’ll need and how long to get there  
 
 ---
 
 ## 🧱 Tech Stack
-- **Framework**: Next.js (optimized for static pages & SEO)  
-- **UI**: Tailwind CSS  
-- **Hosting**: Vercel / Netlify  
-- **Analytics**: Plausible or Google Analytics  
-- **Monetization**: Google AdSense, affiliate programs (Mint, NerdWallet, etc.)  
 
----
-
-## 📈 SEO & Monetization Strategy
-- Dedicated, keyword-optimized page for each calculator  
-- Meta title/description + schema.org markup  
-- Long-tail keyword targeting (e.g., *“Best mortgage calculator USA 2025”*)  
-- Affiliate links (budgeting apps, credit repair, etc.)  
-- Google AdSense integration after reaching ~1000 organic visitors/month  
-
----
-
-## 🗓️ Project Timeline
-| Week        | Task |
-|-------------|------|
-| **1**       | Build first 2 calculators |
-| **2**       | Build remaining calculators |
-| **3**       | Finalize UI, add SEO, deploy to Vercel |
-| **4**       | Submit to Google Search Console, set up AdSense |
-| **Month 2+**| Monitor traffic, optimize SEO, add blog posts |
-
----
-
-## 💡 Expansion Ideas
-- Add a **finance blog** to capture more organic traffic  
-- Localize tools for **multiple countries**  
-- Build an **email list** for affiliate marketing & monetization  
+- **Framework:** Next.js (statically optimized; no backend, no login)  
+- **Styling:** Tailwind CSS  
+- **Hosting:** Vercel  
+- **Analytics (optional):** Plausible or Google Analytics  
+- **Monetization:** Google AdSense + affiliate links  
 
 ---
 
 ## 🚀 Getting Started
+
 ### Prerequisites
-- Node.js (>=18)  
+- Node.js >= 18  
 - npm or yarn  
 
 ### Installation
-```bash
-# Clone the repository
-git clone https://github.com/john-git7/Smartfinancetools.git
 
-# Navigate to the project directory
+```bash
+# Clone
+git clone https://github.com/john-git7/Smartfinancetools.git
 cd Smartfinancetools
 
 # Install dependencies
 npm install
 
-# Run the development server
+
+
+# Run locally
 npm run dev
